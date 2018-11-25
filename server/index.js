@@ -37,9 +37,6 @@ async function start() {
   app.use(bodyParser.json())
   app.use(bodyParser.urlencoded({ extended: false }))
 
-  //set api route
-  setApiRoute(app)
-
   // Give nuxt middleware to express
   app.use(nuxt.render)
 
@@ -52,11 +49,6 @@ async function start() {
 
   socketStart(server)
   console.log('Socket.IO Start')
-}
-
-function setApiRoute(app) {
-  const userRoute = require('./../routes/user.route')
-  app.use('/api/user', userRoute)
 }
 
 let messageQueue = []

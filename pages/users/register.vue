@@ -55,7 +55,7 @@ export default {
     onSubmitted(postData) {
       console.log(postData)
       return this.$axios
-        .$post('/api/user/register', postData)
+        .$post(process.env.API_URL + '/api/user/register', postData)
         .then(data => {
           console.log(data.message)
           this.showMessage(data.title, data.message)

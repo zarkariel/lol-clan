@@ -17,6 +17,13 @@ module.exports = {
   },
 
   /*
+  ** API URL
+  */
+  env: {
+    API_URL: 'https://guarded-savannah-53100.herokuapp.com/'
+  },
+
+  /*
   ** Customize the progress-bar color
   */
   loading: { color: '#fff' },

@@ -70,7 +70,7 @@ export default {
       }
 
       return this.$axios
-        .$post('/api/user/login', this.authData)
+        .$post(process.env.API_URL + '/api/user/login', this.authData)
         .then(result => {
           if (result.success) {
             console.log(result)

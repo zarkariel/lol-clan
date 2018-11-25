@@ -143,7 +143,9 @@ const createStore = () => {
         console.log('lay thong tin user id ' + currentUserId)
 
         this.$axios
-          .$post('/api/user/getUserById', { id: currentUserId })
+          .$post(process.env.API_URL + '/api/user/getUserById', {
+            id: currentUserId
+          })
           .then(result => {
             console.log('Data returned : ' + result.currentUser.username)
           })

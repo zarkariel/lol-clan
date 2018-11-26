@@ -141,7 +141,6 @@
 <script>
 import UserList from '@/components/Chat/UserList.vue'
 export default {
-  middleware: ['check-auth', 'auth'],
   components: {
     UserList
   },

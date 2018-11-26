@@ -15,7 +15,8 @@
           <input 
             type="submit" 
             name="" 
-            value="Login" >
+            value="Login" 
+            @click="redirectToLoginPage" >
           <br>
         </div>
         <RegisterForm @submit="onSubmitted"/>
@@ -73,6 +74,9 @@ export default {
       this.modal.header = header
       this.modal.title = title
       this.$refs.boostrapModal.showModal()
+    },
+    redirectToLoginPage() {
+      this.$router.push('/users/login')
     }
   }
 }

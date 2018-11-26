@@ -20,7 +20,7 @@ module.exports = {
   ** API URL
   */
   env: {
-    API_URL: 'https://guarded-savannah-53100.herokuapp.com/'
+    API_URL: 'https://guarded-savannah-53100.herokuapp.com'
   },
 
   /*

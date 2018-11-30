@@ -13,6 +13,9 @@
     "precommit": "npm run lint",
     "heroku-postbuild": "npm run build"
   },
+  "engines": {
+    "node": "10.3.0"
+  },
   "dependencies": {
     "@nuxtjs/axios": "^5.0.0",
     "bcryptjs": "^2.4.3",

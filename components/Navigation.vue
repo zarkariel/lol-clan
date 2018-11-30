@@ -42,6 +42,13 @@
               class="nav-link js-scroll-trigger" 
               href="#contact">Liên hệ</a>
           </li>
+          <li class="nav-item">
+            <nuxt-link 
+              class="nav-link js-scroll-trigger" 
+              to="/users/login">
+              Đăng nhập
+            </nuxt-link>
+          </li>
         </ul>
       </div>
     </div>

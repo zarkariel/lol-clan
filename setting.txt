@@ -1,0 +1,25 @@
+{
+  "workbench.iconTheme": "eq-material-theme-icons",
+  "editor.fontFamily": "Fira Code,Consolas, 'Courier New', monospace",
+  "editor.fontLigatures": true,
+  "editor.tabSize": 2,
+  "workbench.colorTheme": "Dark+ Material",
+  "window.zoomLevel": 1,
+  "editor.formatOnSave": true,
+  "javascript.format.insertSpaceBeforeFunctionParenthesis": true,
+  "eslint.autoFixOnSave": true,
+  "eslint.validate": [
+    {
+      "language": "vue",
+      "autoFix": true
+    },
+    {
+      "language": "html",
+      "autoFix": true
+    },
+    {
+      "language": "javascript",
+      "autoFix": true
+    }
+  ]
+}
